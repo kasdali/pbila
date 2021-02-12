@@ -9,7 +9,7 @@ kind of data you can have.
 As you can see, i used PowerShell to extract the data and save files in my local computer. You can tweak the shell to save the data into Azure Datalake. I also used my username,
 you can use Service Principal for more security. I did it easy way to go fast :).
 
-#Prerequisites
+# Prerequisites
 
 * PowerShell V7.0
 * Power BI Administrator role
@@ -18,7 +18,7 @@ you can use Service Principal for more security. I did it easy way to go fast :)
   <img src="./img/example.png" alt="Size Limit CLI" width="738">
 </p>
 
-#Limitations
+# Limitations
 
 * The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. lucky you :).
 * The API call (`Refreshables`) wil fetch only the data about the last refresh. In case your dataset refreshing several times per day, you'll get only the last status.
