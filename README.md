@@ -21,7 +21,7 @@ you can use Service Principal for more security. I did it easy way to go fast :)
 * There is an API (`Get Refresh History`) allows you to get the history refresh. But, you need to be part of each workspace.
 
 # Versions
-* 1.0.1 : Addinf new KPI in (`Refresh Schedule`) "Ratio Dataset Activity / Refreshs" giving you the balance between the usage of the dataset versus the refresh
+* 1.0.1 : Adding new KPI in (`Refresh Schedule`) "Ratio Dataset Activity / Refreshs" giving you the balance between the usage of the dataset versus the refresh
 * 1.0.0 : 
 
 # Documentations
