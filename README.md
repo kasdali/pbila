@@ -20,6 +20,6 @@ you can use Service Principal for more security. I did it easy way to go fast :)
 
 # Limitations
 
-* The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. lucky you :).
+* The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. So, lucky you are:).
 * The API call (`Refreshables`) wil fetch only the data about the last refresh. In case your dataset refreshing several times per day, you'll get only the last status.
 * There is an API (`Get Refresh History`) allows you to get the history refresh. But, you need to be part of each workspace.
