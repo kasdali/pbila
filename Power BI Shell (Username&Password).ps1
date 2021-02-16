@@ -12,10 +12,9 @@ Install-Module MicrosoftPowerBIMgmt.Workspaces
 
 
 # log into Azure AD user account with hard-code user name and password
-
 Write-Host("Step 1 : Login....")
-$User = ""
-$PW = ""
+$User = "****"
+$PW = "*****"
 
 
 $SecPasswd = ConvertTo-SecureString $PW -AsPlainText -Force
@@ -33,7 +32,6 @@ $time = date($RetrieveDate) -Format "yyyyMMdd"
 $Filename = date($RetrieveDate) -Format "yyyyMMdd"
 
 #Export Paths
-
 $Groupspath      = $BasePath + $Filename+"_Workspaces.json"
 $ActivityLogsPath = $BasePath + $Filename+"_Activities.csv"
 $CapacitiesPath = $BasePath + $Filename+"_Capacities.csv"
@@ -55,7 +53,7 @@ $EndDT = $RetrieveYearStr + '-' + $RetrieveMonthStr + '-' + $RetrieveDayStr + 'T
 
 # Function to retrive power bi activities
 $ActivityLogs = Get-PowerBIActivityEvent -StartDateTime $StartDt -EndDateTime $EndDT | ConvertFrom-Json
-# retrive avtivities datas
+# retrive activities datas
 $ActivityLogSchema = $ActivityLogs | `
     Select-Object Id,RecordType,CreationTime,Operation,OrganizationId,UserType,UserKey,Workload, `
         UserId,ClientIP,UserAgent,Activity,ItemName,WorkspaceName,DatasetName,ReportName, `
@@ -71,7 +69,7 @@ Write-Host("Step 2 : Loading Activities....Done")
 ################## GET WORKSPACES DATA###########################################
 Write-Host("Step 3 : Loading Groups....")
 $GroupsURI = '/admin/groups?$top=5000&' + '$filter=type ne' + " 'PersonalGroup'" + ' and state eq' + " 'Active'" + '&$expand=users,reports,dashboards,datasets,dataflows'
-#$GroupsData = Invoke-PowerBIRestMethod -Url $GroupsURI -Method Get | Out-File $Groupspath
+
 $GroupsData = Invoke-PowerBIRestMethod -Url $GroupsURI -Method Get | ConvertFrom-Json
 # getting datasetid to be used in the datasource API
 $DatasetId = $GroupsData.value.datasets.id
@@ -108,11 +106,7 @@ Write-Host("Step 6:  Loading Gateways.....Done")
 
 ################## GET DataSource DATA###########################################
 Write-Host("Step 7 : Loading Datasources.....")
-#delete the file if existe
-if (Test-Path $DatasourcesPath) {
-  Remove-Item $DatasourcesPath
-}
-
+# i is used to count datasets
 $i = 0 
 $Obj_Store = @()
 
@@ -128,7 +122,16 @@ $DataCall = $DatasourceCall | ConvertFrom-Json | Foreach {
 $Obj_Store += $_.value
 }}
 $Obj_Store | ConvertTo-Json | Out-File $DatasourcesPath -Append
-
-
 Write-Host("Step 7 : Loading Datasources.....Done")
+
+
+#Refresh dataset
+Write-Host("Step 8 : Starting Refresh dataset.....")
+$Dataset_Id = '****'
+$MailFailureNotify = @{"notifyOption"="MailOnFailure"}
+$Refresh_URI= "https://api.powerbi.com/v1.0/myorg/datasets/"+$Dataset_Id+"/refreshes"
+$RefreshCall = Invoke-PowerBIRestMethod -Url $Refresh_URI -Method Post -Body $MailFailureNotify
+Write-Host("Step 8 : Starting Refresh dataset.....Done")
+
+
 exit
