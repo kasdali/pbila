@@ -88,7 +88,7 @@ Feel free to modify the script or the report to fit your needs.
 - Refreshes Details : Matrice breakdown
 
 ### Gateways
-<a href="https://ibb.co/4dLL7Q0"><img src="https://i.ibb.co/jRYYTpj/Gateways.png" alt="Gateways" border="0"></a>
+<a href="https://ibb.co/Zc797b9"><img src="https://i.ibb.co/tYFRF1R/Gateways.png" alt="Gateways" border="0"></a>
 
 - Latest Version : The latest verison available of the Data Gateway
 - Date Pulished : Date of the availbility of the latest version of the Data Gateway
