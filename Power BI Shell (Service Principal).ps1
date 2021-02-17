@@ -10,9 +10,9 @@ Install-Module MicrosoftPowerBIMgmt.Reports
 Install-Module MicrosoftPowerBIMgmt.Workspaces
 #>
 
-$tenantid = 'a24d85be-26e7-44d2-a482-accce7bce711'
-$appID = '325ecaf3-cac6-4b65-aaac-7d530c9ac89b' 
-$appSecret = '.lIqkqlyz-Cq47dWUgOdNA.s-c1.~E1Av~'
+$tenantid = '*******************'
+$appID = '****************' 
+$appSecret = '******************'
 #Get token
 $TokenArgs = @{
     Grant_type = 'client_credentials'
@@ -116,11 +116,7 @@ Write-Host("Step 6:  Loading Gateways.....Done")
 
 ################## GET DataSource DATA###########################################
 Write-Host("Step 7 : Loading Datasources.....")
-#delete the file if existe
-if (Test-Path $DatasourcesPath) {
-  Remove-Item $DatasourcesPath
-}
-
+# i is used to count datasets
 $i = 0 
 $Obj_Store = @()
 
@@ -136,7 +132,17 @@ $DataCall = $DatasourceCall | ConvertFrom-Json | Foreach {
 $Obj_Store += $_.value
 }}
 $Obj_Store | ConvertTo-Json | Out-File $DatasourcesPath -Append
-
-
 Write-Host("Step 7 : Loading Datasources.....Done")
-exit
+
+
+
+<#
+#Refresh dataset
+Write-Host("Step 8 : Starting Refresh dataset.....")
+$Dataset_Id = '*********************'
+$MailFailureNotify = @{"notifyOption"="MailOnFailure"}
+$Refresh_URI= "https://api.powerbi.com/v1.0/myorg/datasets/"+$Dataset_Id+"/refreshes"
+$RefreshCall = Invoke-PowerBIRestMethod -Url $Refresh_URI -Method Post -Body $MailFailureNotify
+Write-Host("Step 8 : Starting Refresh dataset.....Done")
+
+#>

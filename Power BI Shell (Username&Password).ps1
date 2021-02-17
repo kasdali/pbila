@@ -13,8 +13,8 @@ Install-Module MicrosoftPowerBIMgmt.Workspaces
 
 # log into Azure AD user account with hard-code user name and password
 Write-Host("Step 1 : Login....")
-$User = "****"
-$PW = "*****"
+$User = "*********************"
+$PW = "***********************"
 
 
 $SecPasswd = ConvertTo-SecureString $PW -AsPlainText -Force
@@ -124,14 +124,13 @@ $Obj_Store += $_.value
 $Obj_Store | ConvertTo-Json | Out-File $DatasourcesPath -Append
 Write-Host("Step 7 : Loading Datasources.....Done")
 
-
+<#
 #Refresh dataset
 Write-Host("Step 8 : Starting Refresh dataset.....")
-$Dataset_Id = '****'
+$Dataset_Id = '*********************'
 $MailFailureNotify = @{"notifyOption"="MailOnFailure"}
 $Refresh_URI= "https://api.powerbi.com/v1.0/myorg/datasets/"+$Dataset_Id+"/refreshes"
 $RefreshCall = Invoke-PowerBIRestMethod -Url $Refresh_URI -Method Post -Body $MailFailureNotify
 Write-Host("Step 8 : Starting Refresh dataset.....Done")
 
-
-exit
+#>
