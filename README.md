@@ -11,7 +11,7 @@ Feel free to modify the script or the report to fit your needs.
 
 * PowerShell V7.0
 * Power BI Administrator role
-* Create the folder used to receive the files
+* Create the folder used in the (`$BasePath`) to receive the files
 
 # Limitations
 
