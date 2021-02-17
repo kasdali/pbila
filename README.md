@@ -23,8 +23,7 @@ Feel free to modify the script or the report to fit your needs.
 * No API as admin to extract the information about the APP.
 
 # Versions
-* 1.0.1 : Adding new KPI in (`Refresh Schedule`) "Ratio Dataset Activity / Refreshs" giving you the balance between the usage of the dataset versus the refresh
-* 1.0.0 : 
+* 1.0.0 
 
 # Documentations
      
