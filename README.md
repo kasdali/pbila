@@ -1,4 +1,4 @@
-# Power BI Log Analytics 
+# Power BI Log Analytics Starter Kit
 
 <img src="https://images.squarespace-cdn.com/content/v1/57aa0fb1b3db2bbe2dfb5840/1607362034987-W2CCN0CV3112IH7MO9PP/ke17ZwdGBToddI8pDm48kHetbtA8IrNNARGRRAMq6VBZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHhoieEUztzpJSjZ_qXSmFcXEpZNATOgXau2Y02sfc7AN1lH3P2bFZvTItROhWrBJ0/Power+BI+Logo.png" align="right"
      alt="Power BI Logo" width="120" height="178">
@@ -30,32 +30,32 @@ Feel free to modify the script or the report to fit your needs.
 ### Activity
 <a href="https://ibb.co/5BTpSXM"><img src="https://i.ibb.co/NZxDJgV/Activities.png" alt="Activities" border="0"></a>
 
-- Activity by user :
-- Activity by Category : 
-- Activity by Domain : 
-- Activity by Capacity : 
-- Activity By Date : 
+- Activity by user : Number of action performed by a user
+- Activity by Category : Number of action grouped by category
+- Activity by Domain : Number of action grouped by domain performed by a user
+- Activity by Capacity : Number of action grouped by capacity performed by a user
+- Activity By Date : Number of action grouped by date performed by a user
 
 ### User Activities
 <a href="https://ibb.co/1Yg6xBn"><img src="https://i.ibb.co/rKjsJqt/User-Activities.png" alt="User-Activities" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- User per Workspace : Number of distinct user active in this workspace
+- Activity per users : Number of action grouped by category performed by a user
+- User by domain : Number of distinct user active by domain
+- User by Capacity : Number of distinct user active by capacity
+- User By Date : Number of distinct user active by date
 
 ### Activities details
 <a href="https://ibb.co/p0D7Hw5"><img src="https://i.ibb.co/5MD0Q4w/Activity-Details.png" alt="Activity-Details" border="0"></a>
 
-- Activity matrice details : 
+- Activity matrice details : breakdown details of all actions
 
 ### Inventory & Roles
 <a href="https://ibb.co/FbS3Nz1"><img src="https://i.ibb.co/3yDdGcb/Inventory.png" alt="Inventory" border="0"></a>
 
-- Inventory by Capacity, Worksapce, User & Access Right : 
-- Users by Access Right repartition : 
-- Users by Capacity Name and Access Right : 
+- Inventory by Capacity, Worksapce, User & Access Right : Listing of Capacity, Workspace, user and access right for each one
+- Users by Access Right repartition : Grouping Access Right per role
+- Users by Capacity Name and Access Right : Grouping Access Right per Capacity
 
 ### Workspaces Details
 <a href="https://ibb.co/9VdLY3z"><img src="https://i.ibb.co/hZTj81h/Inventory-Detail.png" alt="Inventory-Detail" border="0"></a>
