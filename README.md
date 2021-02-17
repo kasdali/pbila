@@ -3,10 +3,7 @@
 <img src="https://images.squarespace-cdn.com/content/v1/57aa0fb1b3db2bbe2dfb5840/1607362034987-W2CCN0CV3112IH7MO9PP/ke17ZwdGBToddI8pDm48kHetbtA8IrNNARGRRAMq6VBZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHhoieEUztzpJSjZ_qXSmFcXEpZNATOgXau2Y02sfc7AN1lH3P2bFZvTItROhWrBJ0/Power+BI+Logo.png" align="right"
      alt="Power BI Logo" width="120" height="178">
 
-Power BI Log Analytics is a free tool, helping you to fetch the right insigth about your Power BI usage. This is a starter kit giving you a vision on what you can do and what
-kind of data you can have.
-
-As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform theme to insights.
+Power BI Log Analytics is a free tool, helping you to fetch the right insigth about your Power BI usage. As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform them to insights.
 
 Feel free to modify the script or the report to fit your needs.
 
