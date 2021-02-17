@@ -113,8 +113,8 @@ Feel free to modify the script or the report to fit your needs.
 <a href="https://ibb.co/16SM8g4"><img src="https://i.ibb.co/WtT0ghR/Gateways-Settings.png" alt="Gateways-Settings" border="0"></a>
 
 For this report, i'm using two datasources as you can see in my lineage diagrame.
-- Web : I'm using the url (`https://www.microsoft.com/en-us/download/details.aspx?id=53127`) using the Web connector to fetch the latest Gateway version and the published date
-- Data : The datasource to get acces to the files
+- Web : I'm using the url (`https://www.microsoft.com/en-us/download/details.aspx?id=53127`) using the Web connector to fetch the latest Gateway version and the published date, with anonymous credentials 
+- Data : The datasource to get acces to the files, with your own credentials
 
 ### Contact
 For any suggestions or remarks, do not hesitate to contact me via my linkedIn : https://www.linkedin.com/in/kasdalinassim/
