@@ -20,6 +20,7 @@ Feel free to modify the script or the report to fit your needs.
 * The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. So, lucky you are:).
 * The API call (`Refreshables`) wil fetch only the data about the last refresh. In case your dataset refreshing several times per day, you'll get only the last status.
 * There is an API (`Get Refresh History`) allows you to get the history refresh. But, you need to be part of each workspace.
+* No API as admin to extract the information about the APP.
 
 # Versions
 * 1.0.1 : Adding new KPI in (`Refresh Schedule`) "Ratio Dataset Activity / Refreshs" giving you the balance between the usage of the dataset versus the refresh
@@ -60,50 +61,55 @@ Feel free to modify the script or the report to fit your needs.
 ### Workspaces Details
 <a href="https://ibb.co/9VdLY3z"><img src="https://i.ibb.co/hZTj81h/Inventory-Detail.png" alt="Inventory-Detail" border="0"></a>
 
-- Inventory by Capacity, Worksapce, User & Access Right : 
-- Inventory by Capacity, Worksapce, User & Access Right : 
+- Inventory by Capacity, Worksapce, User & Access Right : Matrice breakdown
+- Inventory by Capacity, Worksapce, User & Access Right : Neuronal graph
 
 ### Inventory Evolution
 <a href="https://ibb.co/TghSr5d"><img src="https://i.ibb.co/QKmRXGt/Inventory-Evolution.png" alt="Inventory-Evolution" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- Current Status : Current inventory status
+- D-1 Status : Day -1 inventory status minus the current inventory
+- Inventory History : Number of artefact by date 
 
 ### Refresh Schedule
 <a href="https://ibb.co/DGRdwCy"><img src="https://i.ibb.co/0BG5YMS/Refreshables.png" alt="Refreshables" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- Scheduled Refreshes Per User for a Week : Number of refreshes per user for a week
+- Refreshes per Capacity : Number of refreshes per premium capacity for a week
+- Refreshes per Dataset : Number of refreshes per dataset for a week
+- Average Refreshes duration per dataset : Average refresh duration per dataset 
+- Refreshes Schedule timeline : Timeline matrice of sheduled refreshes for a week
+- Ratio Usage Activity / Number of Refresh per dataset : Ratio between usage and refresh for a dataset
 
 ### Refresh Status
 <a href="https://ibb.co/qYjV4Ls"><img src="https://i.ibb.co/pjw5s6z/Refreshables-Status.png" alt="Refreshables-Status" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- Refreshes by Capacity : last refreshe status per dataset
+- Refresh Status timeline : Timeline status (Daily) for refreshes
+- Refreshes Details : Matrice breakdown
 
 ### Gateways
 <a href="https://ibb.co/4dLL7Q0"><img src="https://i.ibb.co/jRYYTpj/Gateways.png" alt="Gateways" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- Latest Version : The latest verison available of the Data Gateway
+- Date Pulished : Date of the availbility of the latest version of the Data Gateway
+- Gateways Type : Repartition per gateway type
+- Active Gateways : Repartion of active & inactive Gateways
+- Customer Connector : Availabilty of customer connector 
+- Uptodate version : Repartion of uptodate version gateways
+- Gateways per user & per type : Number of distinct gateway per user & by type
+- Gateways Version & Update Status : Number of distinct gateway version & Update Status
 
 ### Datasources
 <a href="https://ibb.co/jvTMTQd"><img src="https://i.ibb.co/N6sjsJX/Datasources.png" alt="Datasources" border="0"></a>
 
-- User per Workspace : 
-- Activity per users
-- User by domain : 
-- User by Capacity : 
-- User By Date : 
+- Datasources Type : Number of distinct type of datasources
+- Datasources per user : Number of distinct datasources per user
+- Datasources Details : Matrice breakdown
+
+
+### Contact
+For any suggestions or remarks, do not hesitate to contact me via my linkedIn : https://www.linkedin.com/in/kasdalinassim/
+
+;)
+
