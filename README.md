@@ -20,6 +20,7 @@ Feel free to modify the script or the report to fit your needs.
 * The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. So, lucky you are:).
 * The API call (`Refreshables`) wil fetch only the data about the last refresh. In case your dataset refreshing several times per day, you'll get only the last status.
 * There is an API (`Get Refresh History`) allows you to get the history refresh. But, you need to be part of each workspace.
+* No API as admin to extract the information about the APP.
 
 # Versions
 * 1.0.1 : Adding new KPI in (`Refresh Schedule`) "Ratio Dataset Activity / Refreshs" giving you the balance between the usage of the dataset versus the refresh
