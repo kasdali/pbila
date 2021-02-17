@@ -5,6 +5,18 @@
 
 Power BI Log Analytics is a free tool, helping you to fetch the right insigth about your Power BI usage. As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform them to insights.
 
+For that, i'm using the Power BI RESP API (`https://docs.microsoft.com/en-us/rest/api/power-bi/`) espicialy the ADMIN API.
+
+
+ - Connect-PowerBIServiceAccount* : Log in to the Power BI service (`https://docs.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount?view=powerbi-ps`) you need to install MicrosoftPowerBIMgmt Powershell module
+ - Get Activity Events : Fetching the activity logs (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getactivityevents`)
+ - Groups GetGroupsAsAdmin : Returns a list of workspaces for the organization with enxtension of users,reports,dashboards,datasets,dataflows excluding the inactive and the personal workspaces (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/groups_getgroupsasadmin`)
+ - Get Capacities As Admin : Returns a list of capacities for the organization. (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getcapacitiesasadmin`)
+ - Get Refreshables : Returns a list of refreshables for the organization (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getrefreshables`)
+ - Get Gateways : Returns a list of gateways for the organization (`No documentation for this V2.0 API`)
+ - Datasets GetDatasourcesAsAdmin : Returns a list of datasources for the specified dataset. (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/datasets_getdatasourcesasadmin`)
+ 
+
 Feel free to modify the script or the report to fit your needs.
 
 # Prerequisites
