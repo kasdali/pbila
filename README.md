@@ -31,6 +31,7 @@ Feel free to modify the script or the report to fit your needs.
     * Web : I'm using the url (`https://www.microsoft.com/en-us/download/details.aspx?id=53127`) using the Web connector to fetch the latest Gateway version and the published date, with anonymous credentials 
     * Data : The datasource to get acces to the files, with your own credentials
 <a href="https://ibb.co/16SM8g4"><img src="https://i.ibb.co/WtT0ghR/Gateways-Settings.png" alt="Gateways-Settings" border="0"></a>
+* Report developped with Power BI Desktop Version: 2.90.542.0 64-bit (February 2021)
 
 # Limitations
 
