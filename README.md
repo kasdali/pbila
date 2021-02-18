@@ -24,6 +24,8 @@ Feel free to modify the script or the report to fit your needs.
 * PowerShell V7.0
 * Power BI Administrator role
 * Create the folder used in the (`$BasePath`) to receive the files
+* Update (`$BasePath`) in the parameters setting of the report
+<a href="https://ibb.co/g4nHxSg"><img src="https://i.ibb.co/0sw8xCJ/Parameters.png" alt="Parameters" border="0"></a>
 * Install (`MicrosoftPowerBIMgmt`) Powershell module to use the (`Connect-PowerBIServiceAccount`) API
 * Data sources credential configuration : For this report, i'm using two datasources as you can see in my lineage diagrame.
     * Web : I'm using the url (`https://www.microsoft.com/en-us/download/details.aspx?id=53127`) using the Web connector to fetch the latest Gateway version and the published date, with anonymous credentials 
