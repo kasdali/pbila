@@ -3,12 +3,12 @@
 <img src="https://images.squarespace-cdn.com/content/v1/57aa0fb1b3db2bbe2dfb5840/1607362034987-W2CCN0CV3112IH7MO9PP/ke17ZwdGBToddI8pDm48kHetbtA8IrNNARGRRAMq6VBZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHhoieEUztzpJSjZ_qXSmFcXEpZNATOgXau2Y02sfc7AN1lH3P2bFZvTItROhWrBJ0/Power+BI+Logo.png" align="right"
      alt="Power BI Logo" width="120" height="178">
 
-Power BI Log Analytics is a free tool, helping you to fetch the right insigth about your Power BI usage. As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform them to insights.
+Power BI Log Analytics is a free tool that helps you fetch the right insigth of your Power BI usage. As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform it to insights.
 
-For that, i'm using the Power BI RESP API (`https://docs.microsoft.com/en-us/rest/api/power-bi/`) especially the ADMIN API.
+To do, i'm using the Power BI RESP API (`https://docs.microsoft.com/en-us/rest/api/power-bi/`) especially the ADMIN API.
 
 
- - Connect-PowerBIServiceAccount* : Log in to the Power BI service (`https://docs.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount?view=powerbi-ps`) you need to install MicrosoftPowerBIMgmt Powershell module
+ - Connect-PowerBIServiceAccount* : Log in the Power BI service (`https://docs.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount?view=powerbi-ps`) you need to install MicrosoftPowerBIMgmt Powershell module
  - Get Activity Events : Fetching the activity logs (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getactivityevents`)
  - Groups GetGroupsAsAdmin : Returns a list of workspaces for the organization with enxtension of users,reports,dashboards,datasets,dataflows excluding the inactive and the personal workspaces (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/groups_getgroupsasadmin`)
  - Get Capacities As Admin : Returns a list of capacities for the organization. (`https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getcapacitiesasadmin`)
@@ -21,10 +21,9 @@ Feel free to modify the script or the report to fit your needs.
 
 # Prerequisites
 
-* PowerShell V7.0
 * Power BI Administrator role
-* Create the folder used in the (`$BasePath`) to receive the files
-* Update (`$BasePath`) in the parameters setting of the report
+* Create the folder to be used in the  (`$BasePath`) to receive the files
+* Update (`$BasePath`) the parameters setting of the report 
 <a href="https://ibb.co/g4nHxSg"><img src="https://i.ibb.co/0sw8xCJ/Parameters.png" alt="Parameters" border="0"></a>
 * Install (`MicrosoftPowerBIMgmt`) Powershell module to use the (`Connect-PowerBIServiceAccount`) API
 * Data sources credential configuration : For this report, i'm using two datasources as you can see in my lineage diagrame.
@@ -35,10 +34,10 @@ Feel free to modify the script or the report to fit your needs.
 
 # Limitations
 
-* The API call (`GetGroupsAsAdmin`) you must specicy a limitation parametre (`$top={$top}`) and the limitation is 5000. In case you have more than 5K Workspaces you'll be stuck ! in case you have several Premium capacity, then you can filter per capacity. So, lucky you are:).
-* The API call (`Refreshables`) wil fetch only the data about the last refresh. In case your dataset refreshing several times per day, you'll get only the last status.
-* There is an API (`Get Refresh History`) allows you to get the history refresh. But, you need to be part of each workspace.
-* No API as admin to extract the information about the APP.
+* In the API call (`GetGroupsAsAdmin`) you must specify a limitation parametre of 5000 maximum (`$top={$top}`). If you have more than 5K Workspaces you'll be stuck ! In case you have several Premium capacity, then you can create a loop using each capacity as a filter. 
+* The API call (`Refreshables`) will only fetch the data of the last refresh. In case your dataset refreshes several times, you'll only get the last status.
+* There is an API (`Get Refresh History`) that allows you to get the history refresh, but you need to be part of each workspace.
+* There is No API to extract the information about the APP at the organisation level.
 
 # Versions
 * 1.0.0 
@@ -125,7 +124,7 @@ Feel free to modify the script or the report to fit your needs.
 - Datasources Details : Matrice breakdown
 
 ### Contact
-For any suggestions or remarks, do not hesitate to contact me via my linkedIn : https://www.linkedin.com/in/kasdalinassim/
+For any suggestions or remarks, feel free to contact me on linkedIn  : https://www.linkedin.com/in/kasdalinassim/
 
 ;)
 
