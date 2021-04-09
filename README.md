@@ -123,6 +123,12 @@ Feel free to modify the script or the report to fit your needs.
 - Datasources per user : Number of distinct datasources per user
 - Datasources Details : Matrice breakdown
 
+### Versions
+
+* V1.0.0 : PBILA Creation
+* V1.0.2 : *.Dax & Modeling optimization. *.Update Workspace Json file struucture
+
+
 ### Contact
 For any suggestions or remarks, feel free to contact me on linkedIn  : https://www.linkedin.com/in/kasdalinassim/
 
