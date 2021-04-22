@@ -40,7 +40,9 @@ Feel free to modify the script or the report to fit your needs.
 * There is No API to extract the information about the APP at the organisation level.
 
 # Versions
-* 1.0.0 
+* 1.0.0 : Log Analytics
+* 1.0.2 : Dax & Modeling optimization
+* 1.0.3 : Correction "Dim Activities" Duplicates
 
 # Documentations
      
