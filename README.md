@@ -5,7 +5,7 @@
 
 Power BI Log Analytics is a free tool that helps you fetch the right insigth of your Power BI usage. As a starter Kit, the main aim is to show you what kind of information you can get using the Power BI API's and how you can transform it to insights.
 
-To do, i'm using the Power BI RESP API (`https://docs.microsoft.com/en-us/rest/api/power-bi/`) especially the ADMIN API.
+To do, i'm using the Power BI REST API (`https://docs.microsoft.com/en-us/rest/api/power-bi/`) especially the ADMIN API.
 
 
  - Connect-PowerBIServiceAccount* : Log in the Power BI service (`https://docs.microsoft.com/en-us/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount?view=powerbi-ps`) you need to install MicrosoftPowerBIMgmt Powershell module
